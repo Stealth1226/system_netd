@@ -281,7 +281,7 @@ void Controllers::init() {
 
     clatdCtrl.init();
     gLog.info("Initializing ClatdController: %" PRId64 "us", s.getTimeAndResetUs());
-
+/*
     netdutils::Status tcStatus = trafficCtrl.start();
     if (!isOk(tcStatus)) {
         gLog.error("Failed to start trafficcontroller: (%s)", toString(tcStatus).c_str());
@@ -293,7 +293,7 @@ void Controllers::init() {
         exit(1);
     }
     gLog.info("Initializing traffic control: %" PRId64 "us", s.getTimeAndResetUs());
-
+*/
     bandwidthCtrl.enableBandwidthControl();
     gLog.info("Enabling bandwidth control: %" PRId64 "us", s.getTimeAndResetUs());
 
